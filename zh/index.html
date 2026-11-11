@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoBack — 在照片背面写下回忆</title>
+<meta name="description" content="PhotoBack 把每张照片变成拍立得风格的卡片，翻到背面就能亲手写字。手写内容可以搜索，全部在 iPhone 本地完成，私密安全。">
+<meta name="apple-itunes-app" content="app-id=6789584249">
+<link rel="canonical" href="https://photoback-web.whatswrongbill.workers.dev/zh/">
+<link rel="alternate" hreflang="en" href="https://photoback-web.whatswrongbill.workers.dev/">
+<link rel="alternate" hreflang="zh-Hans" href="https://photoback-web.whatswrongbill.workers.dev/zh/">
+<link rel="alternate" hreflang="ja" href="https://photoback-web.whatswrongbill.workers.dev/ja/">
+<link rel="alternate" hreflang="ko" href="https://photoback-web.whatswrongbill.workers.dev/ko/">
+<link rel="alternate" hreflang="es" href="https://photoback-web.whatswrongbill.workers.dev/es/">
+<link rel="alternate" hreflang="fr" href="https://photoback-web.whatswrongbill.workers.dev/fr/">
+<link rel="alternate" hreflang="x-default" href="https://photoback-web.whatswrongbill.workers.dev/">
+<meta property="og:title" content="PhotoBack — 在照片背面写下回忆">
+<meta property="og:description" content="把照片翻过来，在背面亲手写下回忆，再用自己的字迹找回它。私密、本地处理，适用于 iPhone。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://photoback-web.whatswrongbill.workers.dev/zh/">
+<meta name="theme-color" content="#f6f0e4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1f1a14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/photoback-site/assets/favicon.png">
+<link rel="apple-touch-icon" href="/photoback-site/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/photoback-site/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/photoback-site/zh/"><img src="/photoback-site/assets/icon-256.png" alt="" width="34" height="34">PhotoBack</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#features">功能</a>
+      <a class="hide-sm" href="#pricing">价格</a>
+      <a href="/photoback-site/zh/support">支持</a>
+      <details class="lang-menu">
+      <summary aria-label="语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>简体中文</summary>
+      <ul><li><a href="/photoback-site/" hreflang="en" lang="en">English</a></li><li><a href="/photoback-site/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/photoback-site/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/photoback-site/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/photoback-site/es/" hreflang="es" lang="es">Español</a></li><li><a href="/photoback-site/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+    </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">还记得老照片背面的字吗？</p>
+        <h1 id="hero-title">在照片背面，写下回忆。</h1>
+        <p class="lede">PhotoBack 把每张照片变成一张拍立得风格的卡片。翻过来，亲手写下日期、地点、名字或当时的心情。多年以后，用自己写下的字就能把它找回来。</p>
+        <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        下载 iPhone 版 PhotoBack
+      </a>
+        <p class="note-small">免费开始 · 无需注册账户 · 支持 English、简体中文、日本語、한국어、Español 和 Français</p>
+      </div>
+
+      <div>
+        <div class="scene">
+          <button class="card" id="hero-card" type="button" aria-pressed="false" aria-label="翻转照片，查看背面的手写内容">
+            <div class="face front" aria-hidden="false">
+              <div class="tape"></div>
+              <div class="photo" style="background-image:url('/assets/seed-08-lake-boat.jpg')" role="img" aria-label="平静山湖上的一条木船"></div>
+              <div class="caption">早餐前的湖</div>
+            </div>
+            <div class="face back">
+              <span class="stamp">2026年7月14日</span>
+              <p class="handwriting">早上七点租了那条小船。<br>湖面静得能看见两座山。<br>爸爸划船，我拍下了这张。<br>还要再来。♡</p>
+            </div>
+          </button>
+        </div>
+        <p class="flip-hint" id="flip-hint">点一下照片，翻到背面 ↻</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-title">数码时代遗忘的小习惯</h2>
+        <p>以前每张冲印的照片背后都有一行字。PhotoBack 把这个习惯带回来，就用你手机里已有的照片。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1.</div>
+          <h3>选一张照片</h3>
+          <p>可以选一张、几张，或整个图库。也可以在“照片” App 的分享菜单里直接发送到 PhotoBack。</p>
+        </div>
+        <div class="step">
+          <div class="num">2.</div>
+          <h3>翻过来，写下来</h3>
+          <p>点一下卡片，就会翻到空白的横线纸。用手指或 Apple Pencil 书写，想打字也可以。</p>
+        </div>
+        <div class="step">
+          <div class="num">3.</div>
+          <h3>多年后找回它</h3>
+          <p>PhotoBack 在 iPhone 上识别你的手写，搜“那次海边旅行”，就能找到那张卡片。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" aria-label="功能">
+    <div class="wrap">
+      <div class="feature">
+        <div>
+          <p class="eyebrow">正面永远不变</p>
+          <h3>每张照片，都是一张珍藏卡片</h3>
+          <p>原始照片不会被编辑或裁剪。它放在奶油色的拍立得相框里，配一行手写说明，就像收藏一张冲印的照片。</p>
+          <ul>
+            <li>照片与背面之间的 3D 翻转</li>
+            <li>每张背面都有日期印章</li>
+            <li>还没写字的照片也有智能说明</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/zh/card-detail.jpg" alt="PhotoBack 卡片详情页：拍立得相框里是一张山湖上木船的照片" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">用你自己的字</p>
+          <h3>像从前一样书写</h3>
+          <p>用手指或 Apple Pencil 在横线纸上书写，墨水颜色随你选。想打字？每张卡片都能随时切换。</p>
+          <ul>
+            <li>手指或 Apple Pencil</li>
+            <li>也可以打字</li>
+            <li>奶油色纸张，多种墨水颜色</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/zh/card-back.jpg" alt="卡片背面的手写内容：road trip, day three, singing badly" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">直接问，不用翻</p>
+          <h3>搜索你自己的手写</h3>
+          <p>你写下的每一条笔记都会在 iPhone 上转成文字，可以搜索。即使记不清原话，自然语言搜索也能找到那个瞬间。</p>
+          <ul>
+            <li>在 iPhone 上识别手写</li>
+            <li>按笔记、描述、分类或地点搜索</li>
+            <li>能理解你意思的智能搜索</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/zh/search.jpg" alt="搜索页面：通过背面写的 morning 一词找到三张卡片" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">是故事，不只是相机胶卷</p>
+          <h3>会讲故事的相册集</h3>
+          <p>把卡片整理成相册集，按时间浏览。设备上的 AI 可以把相册集的故事讲给你听。想分享时，可以把它发布为网页链接，任何人都能打开翻看，无需安装 App。</p>
+          <ul>
+            <li>相册集按时间排列</li>
+            <li>由设备端 AI 撰写相册故事</li>
+            <li>以链接分享相册集，随时可以撤回</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/zh/albums.jpg" alt="相册集页面：卡片按旅行、地点和人物分组" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="privacy-title">隐私，从设计开始</h2>
+        <p>你的照片和手写内容只属于你。PhotoBack 没有账户系统，也没有自己的服务器。</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h3>AI 在 iPhone 上运行</h3>
+          <p>说明文字、心情标签、相册故事和搜索全部在你的设备上完成，不会发送到任何 AI 服务器。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3>你自己的 iCloud</h3>
+          <p>开启同步后，卡片通过你私人的 iCloud 账户同步，我们无法查看。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🔑</div>
+          <h3>无需账户</h3>
+          <p>不用注册，不用登录，不用邮箱。打开 App 就能开始写。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🚫</div>
+          <h3>无广告，无广告追踪</h3>
+          <p>我们只收集匿名的崩溃报告和基本使用数据，绝不收集你的照片、笔记或手写内容。</p>
+        </div>
+      </div>
+      <p class="more">阅读完整的<a href="/photoback-site/privacy">隐私政策</a>（英文）。</p>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">给爱收藏的你</p>
+        <h2 id="pricing-title">免费开始，想要更多再升级 Pro。</h2>
+        <p>在照片背面写字永远免费。PhotoBack Pro 在此基础上增加更多功能。</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>免费版</h3>
+          <p class="plan-price">永久免费</p>
+          <ul><li>卡片和手写笔记数量不限</li><li>在 iPhone 上搜索手写内容</li><li>iCloud 同步和“照片”分享菜单</li><li>前三个相册集的相册故事</li><li>同一时间以网页链接分享一个相册集</li></ul>
+        </div>
+        <div class="plan plan-pro">
+          <h3>PhotoBack Pro</h3>
+          <ul><li>每个相册集都有相册故事</li><li>想分享多少相册集都可以</li><li>亚麻、浅粉和炭灰纸张，以及另外四种墨水颜色</li><li>自定义相册集封面</li></ul>
+          <div class="tiers">
+            <div class="tier">
+              <div><span class="tier-name">按月</span><span class="tier-tag">7 天免费试用</span></div>
+              <div class="tier-price">¥15 <small>/ 月</small></div>
+            </div>
+            <div class="tier best">
+              <div><span class="tier-name">按年</span><span class="tier-tag">省 45% · 7 天免费试用</span></div>
+              <div class="tier-price">¥98 <small>/ 年</small></div>
+            </div>
+            <div class="tier">
+              <div><span class="tier-name">终身</span></div>
+              <div class="tier-price">¥198 <small>一次性购买</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note">以上为中国大陆 App Store 价格。购买前 App Store 会显示你所在地区的价格。订阅会自动续期，可随时在“设置”中取消。</p>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">送给未来自己的礼物</p>
+      <h2 id="cta-title">开始在背面写字吧。</h2>
+      <p>照片已经在你的手机里了。照片背后的故事还在你的记忆里，趁现在把它写下来。</p>
+      <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        下载 iPhone 版 PhotoBack
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 PhotoBack</span>
+    <nav aria-label="Footer">
+      <a href="/photoback-site/privacy">隐私政策</a>
+      <a href="/photoback-site/terms">使用条款</a>
+      <a href="/photoback-site/zh/support">支持</a>
+      <a href="mailto:whatswrongbill@gmail.com">联系我们</a>
+    </nav>
+    <p class="footer-note">隐私政策和使用条款仅提供英文版本，以英文版本为准。</p>
+  </div>
+</footer>
+<script>
+  // Close the language menu on an outside click or Escape, like a native menu.
+  (function () {
+    var menu = document.querySelector('.lang-menu');
+    if (!menu) return;
+    document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') menu.open = false; });
+  })();
+</script>
+<script>
+  (function () {
+    var card = document.getElementById('hero-card');
+    var hint = document.getElementById('flip-hint');
+    var touched = false;
+    function flip() {
+      var on = card.classList.toggle('flipped');
+      card.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    card.addEventListener('click', function () { touched = true; flip(); hint.style.visibility = 'hidden'; });
+    // One unprompted flip-and-back teaches the gesture to visitors who never tap.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setTimeout(function () { if (!touched) flip(); }, 1600);
+      setTimeout(function () { if (!touched) flip(); }, 4200);
+    }
+  })();
+</script>
+</body>
+</html>

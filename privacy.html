@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PhotoBack</title>
+<meta name="description" content="How PhotoBack handles your photos, handwriting, and data.">
+<meta name="apple-itunes-app" content="app-id=6789584249">
+<link rel="icon" type="image/png" href="/photoback-site/assets/favicon.png">
+<link rel="apple-touch-icon" href="/photoback-site/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/photoback-site/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/photoback-site/"><img src="/photoback-site/assets/icon-256.png" alt="" width="34" height="34">PhotoBack</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/photoback-site/privacy" aria-current="page">Privacy</a>
+      <a href="/photoback-site/terms">Terms</a>
+      <a href="/photoback-site/support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated October 14, 2026</p>
+
+<p>PhotoBack is a digital keepsake app: you write on the back of your photos, the same way you would on a real Polaroid. Your personal keepsake content stays on your device and in your private iCloud account unless you choose to publish an album through a public sharing link. Limited app-usage and crash diagnostics are sent to Firebase as described below.</p>
+
+<h2>What PhotoBack stores</h2>
+<ul>
+  <li>The photos you import and the handwritten or typed notes on their backs</li>
+  <li>Text automatically transcribed from your handwriting, using Apple's on-device Vision framework</li>
+  <li>Album names and any location or date labels you add</li>
+</ul>
+
+<h2>Where it's stored</h2>
+<p>All of the above lives in a SwiftData database inside your device's App Group container, and — if you enable iCloud sync in Settings — mirrors to <strong>your own private iCloud database</strong> via Apple's CloudKit framework. Private cards are stored in your own iCloud account. Albums you choose to publish are an exception, as explained under Sharing below. Firebase is used only for the limited diagnostics described below, not as a backend for your keepsake content.</p>
+
+<h2>On-device AI features</h2>
+<p>Smart captions, mood tags, album narration, and semantic search are processed entirely on your device, using one of the following, depending on what your device supports:</p>
+<ul>
+  <li>Apple Intelligence (Apple's on-device Foundation Models), when available</li>
+  <li>A local AI model you can optionally download in Settings, which then runs fully offline</li>
+  <li>Apple's on-device NaturalLanguage framework for search</li>
+</ul>
+<p>None of these send your photos, handwriting, or transcripts to any external server, including ours — because we don't have one.</p>
+
+<h2>Sharing</h2>
+<p>Sharing is optional and initiated by you. When you publish an album as a web sharing link, PhotoBack uploads the selected photos, captions, and handwriting previews to Apple's CloudKit public database. Anyone with the link can view that published content; it is not limited to named recipients. Published records are accessible to the app's developer through the public database. You can unpublish the album in PhotoBack to remove its published records. Content you export through the native Share Sheet is sent to the destination you choose.</p>
+
+<h2>Analytics and tracking</h2>
+<p>PhotoBack uses Google Firebase Analytics and Firebase Crashlytics to understand basic app usage and diagnose crashes. These services may receive app interaction events, app and operating-system versions, device characteristics, and crash diagnostics. They do not receive your photos, notes, descriptions, tags, handwriting, contacts, or precise location. We do not use this information for advertising, cross-app tracking, or sale to third parties.</p>
+
+<h2>In-app purchases</h2>
+<p>Subscription and purchase transactions are handled entirely by Apple's StoreKit and the App Store. We receive only what Apple provides for entitlement verification (i.e., whether you've purchased Pro) — no payment details ever pass through us.</p>
+
+<h2>Your rights</h2>
+<p>Because everything is stored in your own iCloud account, you control your data directly: delete a card in the app to delete it everywhere it has synced, or turn off iCloud sync in Settings to keep everything local-only. Uninstalling the app removes all local data; your iCloud copy (if enabled) can be removed by disabling sync first and deleting the local data.</p>
+
+<h2>Children's privacy</h2>
+<p>PhotoBack does not knowingly collect personal keepsake content from children. The limited diagnostics described above are used only to operate and improve the app.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this same URL with a revised date above.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:whatswrongbill@gmail.com">whatswrongbill@gmail.com</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 PhotoBack</span>
+    <nav aria-label="Footer">
+      <a href="/photoback-site/privacy">Privacy Policy</a>
+      <a href="/photoback-site/terms">Terms of Use</a>
+      <a href="/photoback-site/support">Support</a>
+      <a href="mailto:whatswrongbill@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

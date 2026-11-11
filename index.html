@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoBack — Write on the back of your photos</title>
+<meta name="description" content="PhotoBack turns every photo into a Polaroid-style card you can flip over and write on by hand. Your handwriting becomes searchable, on-device and private. For iPhone.">
+<meta name="apple-itunes-app" content="app-id=6789584249">
+<link rel="canonical" href="https://photoback-web.whatswrongbill.workers.dev/">
+<link rel="alternate" hreflang="en" href="https://photoback-web.whatswrongbill.workers.dev/">
+<link rel="alternate" hreflang="zh-Hans" href="https://photoback-web.whatswrongbill.workers.dev/zh/">
+<link rel="alternate" hreflang="ja" href="https://photoback-web.whatswrongbill.workers.dev/ja/">
+<link rel="alternate" hreflang="ko" href="https://photoback-web.whatswrongbill.workers.dev/ko/">
+<link rel="alternate" hreflang="es" href="https://photoback-web.whatswrongbill.workers.dev/es/">
+<link rel="alternate" hreflang="fr" href="https://photoback-web.whatswrongbill.workers.dev/fr/">
+<link rel="alternate" hreflang="x-default" href="https://photoback-web.whatswrongbill.workers.dev/">
+<meta property="og:title" content="PhotoBack — Write on the back of your photos">
+<meta property="og:description" content="Flip any photo over and write on the back, by hand. Then search your own handwriting. Private, on-device, for iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://photoback-web.whatswrongbill.workers.dev/">
+<meta name="theme-color" content="#f6f0e4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1f1a14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/photoback-site/assets/favicon.png">
+<link rel="apple-touch-icon" href="/photoback-site/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/photoback-site/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/photoback-site/"><img src="/photoback-site/assets/icon-256.png" alt="" width="34" height="34">PhotoBack</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#pricing">Pricing</a>
+      <a href="/photoback-site/support">Support</a>
+      <details class="lang-menu">
+      <summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>English</summary>
+      <ul><li><a href="/photoback-site/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/photoback-site/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/photoback-site/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/photoback-site/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/photoback-site/es/" hreflang="es" lang="es">Español</a></li><li><a href="/photoback-site/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+    </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">remember the back of old photos?</p>
+        <h1 id="hero-title">Write on the back of your photos.</h1>
+        <p class="lede">PhotoBack turns every picture into a Polaroid-style card. Flip it over and write by hand: a date, a place, a name, a feeling. Later, search your own handwriting to find it again.</p>
+        <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        Get PhotoBack for iPhone
+      </a>
+        <p class="note-small">Free to start · No account needed · Available in English, 简体中文, 日本語, 한국어, Español &amp; Français</p>
+      </div>
+
+      <div>
+        <div class="scene">
+          <button class="card" id="hero-card" type="button" aria-pressed="false" aria-label="Flip the photo to see the handwritten back">
+            <div class="face front" aria-hidden="false">
+              <div class="tape"></div>
+              <div class="photo" style="background-image:url('/assets/seed-08-lake-boat.jpg')" role="img" aria-label="A wooden rowboat on a still mountain lake"></div>
+              <div class="caption">the lake, before breakfast</div>
+            </div>
+            <div class="face back">
+              <span class="stamp">JUL 14, 2026</span>
+              <p class="handwriting">Rented the little boat at 7am.<br>Water so still you could see the mountains twice.<br>Dad rowed, I took this.<br>Come back here. ♡</p>
+            </div>
+          </button>
+        </div>
+        <p class="flip-hint" id="flip-hint">tap the photo to flip it ↻</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-title">A habit the digital age forgot</h2>
+        <p>Every printed photo used to carry a note on the back. PhotoBack brings that back, for the photos already on your phone.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1.</div>
+          <h3>Pick a photo</h3>
+          <p>Choose one picture, a handful, or your whole library. You can also send one straight from the Photos app's share sheet.</p>
+        </div>
+        <div class="step">
+          <div class="num">2.</div>
+          <h3>Flip it &amp; write</h3>
+          <p>Tap the card and it turns over to blank ruled paper. Write with your finger or Apple Pencil, or type if you prefer.</p>
+        </div>
+        <div class="step">
+          <div class="num">3.</div>
+          <h3>Find it years later</h3>
+          <p>PhotoBack reads your handwriting on your iPhone, so “that beach trip” brings the right card back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" aria-label="Features">
+    <div class="wrap">
+      <div class="feature">
+        <div>
+          <p class="eyebrow">the front stays untouched</p>
+          <h3>A keepsake card for every photo</h3>
+          <p>Your original photo is never edited or cropped. It sits in a cream Polaroid frame with a handwritten caption, the way you'd keep a print.</p>
+          <ul>
+            <li>3D flip between photo and note</li>
+            <li>A date stamp on every back</li>
+            <li>Smart captions for photos you haven't written on yet</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/en/card-detail.jpg" alt="PhotoBack card detail screen showing a photo of a rowing boat on a mountain lake in a Polaroid frame" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">in your own hand</p>
+          <h3>Write the way you used to</h3>
+          <p>Handwrite with your finger or Apple Pencil on ruled paper, in your choice of ink. Want to type instead? Switch on any card.</p>
+          <ul>
+            <li>Finger or Apple Pencil</li>
+            <li>Typing, if you'd rather</li>
+            <li>Ink colors on cream paper</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/en/card-back.jpg" alt="The back of a card with a handwritten note: road trip, day three, singing badly" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">ask, don't scroll</p>
+          <h3>Search your own handwriting</h3>
+          <p>Every note you write is transcribed on your iPhone and becomes searchable. Natural-language search finds the moment even if you don't remember the exact words.</p>
+          <ul>
+            <li>Handwriting transcription on your iPhone</li>
+            <li>Search by note, description, category or place</li>
+            <li>Smart search that understands what you mean</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/en/search.jpg" alt="Search screen finding three cards by the word morning written on their backs" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">a story, not a camera roll</p>
+          <h3>Albums that tell themselves</h3>
+          <p>Group cards into albums and browse them by time. On-device AI can narrate an album's story back to you. When you want to share one, publish it as a web link that anyone can open and flip through, no app needed.</p>
+          <ul>
+            <li>Albums sorted by time</li>
+            <li>Album stories written by on-device AI</li>
+            <li>Share an album as a link, take it down whenever you want</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/en/albums.jpg" alt="Albums screen with cards grouped into trips, places and people" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="privacy-title">Private by design</h2>
+        <p>Your photos and handwriting are yours. PhotoBack has no account and no server of its own.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h3>AI runs on your iPhone</h3>
+          <p>Captions, mood tags, album stories and search all run on your device. Nothing is sent to an AI server.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3>Your own iCloud</h3>
+          <p>If you turn on sync, cards sync through your private iCloud account. We can't see them.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🔑</div>
+          <h3>No account</h3>
+          <p>No sign-up, no login, no email. Open the app and start writing.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🚫</div>
+          <h3>No ads, no ad tracking</h3>
+          <p>We collect only anonymous crash reports and basic usage events. Never your photos, notes or handwriting.</p>
+        </div>
+      </div>
+      <p class="more">Read the full <a href="/photoback-site/privacy">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">for keepers</p>
+        <h2 id="pricing-title">Free to start. Pro when you want more.</h2>
+        <p>Writing on your photos never costs anything. PhotoBack Pro adds the extras on top.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="plan-price">Free forever</p>
+          <ul><li>Unlimited cards and handwritten notes</li><li>Handwriting search on your iPhone</li><li>iCloud sync and the Photos share sheet</li><li>Album stories for your first three albums</li><li>Share one album at a time as a web link</li></ul>
+        </div>
+        <div class="plan plan-pro">
+          <h3>PhotoBack Pro</h3>
+          <ul><li>Album stories for every album</li><li>Share as many albums as you like</li><li>Linen, Blush and Charcoal paper, plus four extra ink colors</li><li>Custom album covers</li></ul>
+          <div class="tiers">
+            <div class="tier">
+              <div><span class="tier-name">Monthly</span><span class="tier-tag">7-day free trial</span></div>
+              <div class="tier-price">$1.99 <small>/ month</small></div>
+            </div>
+            <div class="tier best">
+              <div><span class="tier-name">Annual</span><span class="tier-tag">Save 37% · 7-day free trial</span></div>
+              <div class="tier-price">$14.99 <small>/ year</small></div>
+            </div>
+            <div class="tier">
+              <div><span class="tier-name">Lifetime</span></div>
+              <div class="tier-price">$29.99 <small>one-time purchase</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note">Prices in the United States. The App Store shows the price for your country before you buy. Subscriptions renew automatically until you cancel in Settings.</p>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">a gift to your future self</p>
+      <h2 id="cta-title">Start writing on the back.</h2>
+      <p>The photos are already on your phone. The stories behind them are still in your head, for now.</p>
+      <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        Get PhotoBack for iPhone
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 PhotoBack</span>
+    <nav aria-label="Footer">
+      <a href="/photoback-site/privacy">Privacy Policy</a>
+      <a href="/photoback-site/terms">Terms of Use</a>
+      <a href="/photoback-site/support">Support</a>
+      <a href="mailto:whatswrongbill@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Close the language menu on an outside click or Escape, like a native menu.
+  (function () {
+    var menu = document.querySelector('.lang-menu');
+    if (!menu) return;
+    document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') menu.open = false; });
+  })();
+</script>
+<script>
+  (function () {
+    var card = document.getElementById('hero-card');
+    var hint = document.getElementById('flip-hint');
+    var touched = false;
+    function flip() {
+      var on = card.classList.toggle('flipped');
+      card.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    card.addEventListener('click', function () { touched = true; flip(); hint.style.visibility = 'hidden'; });
+    // One unprompted flip-and-back teaches the gesture to visitors who never tap.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setTimeout(function () { if (!touched) flip(); }, 1600);
+      setTimeout(function () { if (!touched) flip(); }, 4200);
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoBack — 写真の裏に、手書きで</title>
+<meta name="description" content="PhotoBack は、写真をインスタント写真風のカードに変えるアプリ。裏返して手書きでメモを残せます。手書きの文字は iPhone の中で検索でき、プライバシーも安心です。">
+<meta name="apple-itunes-app" content="app-id=6789584249">
+<link rel="canonical" href="https://photoback-web.whatswrongbill.workers.dev/ja/">
+<link rel="alternate" hreflang="en" href="https://photoback-web.whatswrongbill.workers.dev/">
+<link rel="alternate" hreflang="zh-Hans" href="https://photoback-web.whatswrongbill.workers.dev/zh/">
+<link rel="alternate" hreflang="ja" href="https://photoback-web.whatswrongbill.workers.dev/ja/">
+<link rel="alternate" hreflang="ko" href="https://photoback-web.whatswrongbill.workers.dev/ko/">
+<link rel="alternate" hreflang="es" href="https://photoback-web.whatswrongbill.workers.dev/es/">
+<link rel="alternate" hreflang="fr" href="https://photoback-web.whatswrongbill.workers.dev/fr/">
+<link rel="alternate" hreflang="x-default" href="https://photoback-web.whatswrongbill.workers.dev/">
+<meta property="og:title" content="PhotoBack — 写真の裏に、手書きで">
+<meta property="og:description" content="写真を裏返して、手書きでひとこと。あとから自分の文字で検索できます。iPhone の中で完結する、プライベートな写真日記。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://photoback-web.whatswrongbill.workers.dev/ja/">
+<meta name="theme-color" content="#f6f0e4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1f1a14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/photoback-site/assets/favicon.png">
+<link rel="apple-touch-icon" href="/photoback-site/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/photoback-site/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/photoback-site/ja/"><img src="/photoback-site/assets/icon-256.png" alt="" width="34" height="34">PhotoBack</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#features">機能</a>
+      <a class="hide-sm" href="#pricing">料金</a>
+      <a href="/photoback-site/ja/support">サポート</a>
+      <details class="lang-menu">
+      <summary aria-label="言語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>日本語</summary>
+      <ul><li><a href="/photoback-site/" hreflang="en" lang="en">English</a></li><li><a href="/photoback-site/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/photoback-site/ja/" hreflang="ja" lang="ja" aria-current="true">日本語</a></li><li><a href="/photoback-site/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/photoback-site/es/" hreflang="es" lang="es">Español</a></li><li><a href="/photoback-site/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+    </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">昔の写真の裏、覚えていますか？</p>
+        <h1 id="hero-title">写真の裏に、手書きで。</h1>
+        <p class="lede">PhotoBack は、写真を一枚ずつインスタント写真風のカードにします。裏返して、日付や場所、名前、そのときの気持ちを手書きで。あとから、自分の書いた文字で探し出せます。</p>
+        <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        iPhone 版 PhotoBack を入手
+      </a>
+        <p class="note-small">無料で始められます · アカウント不要 · English、简体中文、日本語、한국어、Español、Français に対応</p>
+      </div>
+
+      <div>
+        <div class="scene">
+          <button class="card" id="hero-card" type="button" aria-pressed="false" aria-label="写真を裏返して手書きのメモを見る">
+            <div class="face front" aria-hidden="false">
+              <div class="tape"></div>
+              <div class="photo" style="background-image:url('/assets/seed-08-lake-boat.jpg')" role="img" aria-label="静かな山の湖に浮かぶ木のボート"></div>
+              <div class="caption">朝ごはん前の湖</div>
+            </div>
+            <div class="face back">
+              <span class="stamp">2026年7月14日</span>
+              <p class="handwriting">朝7時に小さなボートを借りた。<br>水面が静かで、山が二つに見えた。<br>父が漕いで、わたしが撮った。<br>また来よう。♡</p>
+            </div>
+          </button>
+        </div>
+        <p class="flip-hint" id="flip-hint">写真をタップして裏返す ↻</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-title">デジタル時代に忘れられた習慣</h2>
+        <p>プリントした写真の裏には、いつもひとことメモがありました。PhotoBack は、スマホの中の写真にその習慣を取り戻します。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1.</div>
+          <h3>写真を選ぶ</h3>
+          <p>1枚でも、数枚でも、ライブラリ全体でも。「写真」アプリの共有シートから直接送ることもできます。</p>
+        </div>
+        <div class="step">
+          <div class="num">2.</div>
+          <h3>裏返して書く</h3>
+          <p>カードをタップすると、罫線入りの白い紙に裏返ります。指や Apple Pencil で書けて、タイプ入力もできます。</p>
+        </div>
+        <div class="step">
+          <div class="num">3.</div>
+          <h3>何年後でも見つかる</h3>
+          <p>PhotoBack は iPhone の中で手書きの文字を読み取るので、「あの海の旅行」で正しいカードが見つかります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" aria-label="機能">
+    <div class="wrap">
+      <div class="feature">
+        <div>
+          <p class="eyebrow">表面はそのままに</p>
+          <h3>すべての写真を宝物のカードに</h3>
+          <p>元の写真を編集したり切り取ったりすることはありません。クリーム色のインスタント写真風フレームに収まり、手書きのキャプションが添えられます。プリントを大切にしまうように。</p>
+          <ul>
+            <li>写真とメモを 3D で裏返し</li>
+            <li>すべての裏面に日付スタンプ</li>
+            <li>まだ書いていない写真にもスマートキャプション</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/ja/card-detail.jpg" alt="PhotoBack のカード詳細画面：インスタント写真風フレームに山の湖のボートの写真" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">自分の文字で</p>
+          <h3>昔のように、手で書く</h3>
+          <p>指や Apple Pencil で罫線入りの紙に手書き。インクの色も選べます。タイプ入力がいいときは、どのカードでも切り替えられます。</p>
+          <ul>
+            <li>指でも Apple Pencil でも</li>
+            <li>タイプ入力にも対応</li>
+            <li>クリーム色の紙に、選べるインク</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/ja/card-back.jpg" alt="カードの裏面の手書きメモ：road trip, day three, singing badly" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">スクロールより、検索</p>
+          <h3>自分の手書きで検索</h3>
+          <p>書いたメモはすべて iPhone の中でテキストになり、検索できます。正確な言葉を覚えていなくても、自然な言葉での検索でその瞬間が見つかります。</p>
+          <ul>
+            <li>iPhone の中で手書きを読み取り</li>
+            <li>メモ、説明、カテゴリ、場所で検索</li>
+            <li>意味を理解するスマート検索</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/ja/search.jpg" alt="検索画面：裏に書いた morning という言葉で3枚のカードが見つかる" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p class="eyebrow">カメラロールではなく、物語</p>
+          <h3>物語を語るアルバム</h3>
+          <p>カードをアルバムにまとめて、時間順に眺められます。デバイス上の AI がアルバムの物語を語ってくれます。共有したいときは、誰でも開いてめくれるウェブリンクとして公開できます。アプリは不要です。</p>
+          <ul>
+            <li>時間順に並ぶアルバム</li>
+            <li>デバイス上の AI が書くアルバムストーリー</li>
+            <li>リンクで共有して、いつでも取り下げ</li>
+          </ul>
+        </div>
+        <div class="feature-media"><div class="phone"><img src="/photoback-site/assets/screens/ja/albums.jpg" alt="アルバム画面：旅行、場所、人ごとにまとめられたカード" loading="lazy" width="506" height="1100"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="privacy-title">プライバシーを第一に</h2>
+        <p>写真も手書きの文字も、あなたのものです。PhotoBack にはアカウントも独自のサーバーもありません。</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h3>AI は iPhone の中で</h3>
+          <p>キャプション、ムードタグ、アルバムストーリー、検索はすべてデバイス上で動きます。AI サーバーには何も送信しません。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3>あなた自身の iCloud</h3>
+          <p>同期をオンにすると、カードはあなたのプライベートな iCloud アカウントで同期されます。私たちには見えません。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🔑</div>
+          <h3>アカウント不要</h3>
+          <p>登録もログインもメールアドレスも不要。アプリを開いたら、すぐに書き始められます。</p>
+        </div>
+        <div class="privacy-item">
+          <div class="icon" aria-hidden="true">🚫</div>
+          <h3>広告なし、広告トラッキングなし</h3>
+          <p>収集するのは匿名のクラッシュレポートと基本的な利用状況だけ。写真、メモ、手書きの文字は決して収集しません。</p>
+        </div>
+      </div>
+      <p class="more"><a href="/photoback-site/privacy">プライバシーポリシー</a>の全文（英語）を読む。</p>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">大切にしたい人へ</p>
+        <h2 id="pricing-title">無料で始めて、必要なら Pro に。</h2>
+        <p>写真の裏に書くことは、ずっと無料です。PhotoBack Pro は、さらに楽しむための機能を追加します。</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>無料</h3>
+          <p class="plan-price">ずっと無料</p>
+          <ul><li>カードと手書きメモは無制限</li><li>iPhone の中で手書きを検索</li><li>iCloud 同期と「写真」の共有シート</li><li>最初の3つのアルバムでアルバムストーリー</li><li>ウェブリンクで一度に1つのアルバムを共有</li></ul>
+        </div>
+        <div class="plan plan-pro">
+          <h3>PhotoBack Pro</h3>
+          <ul><li>すべてのアルバムでアルバムストーリー</li><li>アルバムをいくつでも共有</li><li>リネン、ブラッシュ、チャコールの紙と、4色の追加インク</li><li>アルバムのカバーをカスタマイズ</li></ul>
+          <div class="tiers">
+            <div class="tier">
+              <div><span class="tier-name">月額</span><span class="tier-tag">7日間無料トライアル</span></div>
+              <div class="tier-price">￥300 <small>/ 月</small></div>
+            </div>
+            <div class="tier best">
+              <div><span class="tier-name">年額</span><span class="tier-tag">30% お得 · 7日間無料トライアル</span></div>
+              <div class="tier-price">￥2,500 <small>/ 年</small></div>
+            </div>
+            <div class="tier">
+              <div><span class="tier-name">買い切り</span></div>
+              <div class="tier-price">￥5,000 <small>1回のみのお支払い</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note">日本の App Store での価格です。購入前に App Store でお住まいの国・地域の価格が表示されます。サブスクリプションは「設定」で解約するまで自動更新されます。</p>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <p class="eyebrow">未来の自分への贈り物</p>
+      <h2 id="cta-title">裏に書き始めよう。</h2>
+      <p>写真はもうスマホの中にあります。その裏にある物語は、まだあなたの記憶の中に。今のうちに書き残しておきましょう。</p>
+      <a class="btn-store" href="https://apps.apple.com/app/id6789584249">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.76 0-1.91-.85-3.14-.83-1.61.03-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 2.99 2.4 1.2-.05 1.66-.78 3.11-.78 1.45 0 1.86.78 3.13.75 1.29-.02 2.11-1.17 2.9-2.33.92-1.34 1.29-2.64 1.31-2.71-.03-.01-2.51-.96-2.5-3.82zM14 5.56c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.44-.61.71-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.34z"/></svg>
+        iPhone 版 PhotoBack を入手
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 PhotoBack</span>
+    <nav aria-label="Footer">
+      <a href="/photoback-site/privacy">プライバシーポリシー</a>
+      <a href="/photoback-site/terms">利用規約</a>
+      <a href="/photoback-site/ja/support">サポート</a>
+      <a href="mailto:whatswrongbill@gmail.com">お問い合わせ</a>
+    </nav>
+    <p class="footer-note">プライバシーポリシーと利用規約は英語版のみで、英語版が優先されます。</p>
+  </div>
+</footer>
+<script>
+  // Close the language menu on an outside click or Escape, like a native menu.
+  (function () {
+    var menu = document.querySelector('.lang-menu');
+    if (!menu) return;
+    document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') menu.open = false; });
+  })();
+</script>
+<script>
+  (function () {
+    var card = document.getElementById('hero-card');
+    var hint = document.getElementById('flip-hint');
+    var touched = false;
+    function flip() {
+      var on = card.classList.toggle('flipped');
+      card.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    card.addEventListener('click', function () { touched = true; flip(); hint.style.visibility = 'hidden'; });
+    // One unprompted flip-and-back teaches the gesture to visitors who never tap.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setTimeout(function () { if (!touched) flip(); }, 1600);
+      setTimeout(function () { if (!touched) flip(); }, 4200);
+    }
+  })();
+</script>
+</body>
+</html>
